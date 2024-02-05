@@ -19,4 +19,4 @@ class TestAccessNestedMap(unittest.TestCase):
             path: Tuple[str],
             expected: Union[Mapping, int]) -> None:
         ''' test '''
-        self.assertEqual(access_nested_map, (nested_map), path, expected)
+        self.assertEqual(access_nested_map(nested_map, path), expected)
