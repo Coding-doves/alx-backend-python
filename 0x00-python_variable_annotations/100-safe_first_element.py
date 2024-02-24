@@ -5,6 +5,7 @@ from typing import Any, List, Union
 
 
 def safe_first_element(lst: List[Any]) -> Union[Any, None]:
+    '''The types of the elements of the input are not know'''
     if lst:
         return lst[0]
     else:
